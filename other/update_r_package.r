@@ -14,6 +14,7 @@ if(!file.exists("DESCRIPTION")){
 
 # add files to .Rbuildignore (files ignored during package building)
 write("^other$",                   file=".Rbuildignore",append=FALSE)
+write("^testing$",                   file=".Rbuildignore",append=TRUE)
 # write("^specificity\\.Rproj$",     file=".Rbuildignore",append=TRUE)
 # write("^\\.Rproj\\.user$",         file=".Rbuildignore",append=TRUE)
 # write("^vignette$",                file=".Rbuildignore",append=TRUE)

@@ -4,7 +4,7 @@
 \alias{make_specs_app}
 \title{make_specs_app}
 \usage{
-make_specs_app(sl, fd, fd_id_col = 1, app_fp = "mySpecApp")
+make_specs_app(sl, fd = NULL, fd_id_col = 1, app_fp = "mySpecApp")
 }
 \arguments{
 \item{sl}{specs_list. A named list of outputs from phy_or_env_spec. See examples.}

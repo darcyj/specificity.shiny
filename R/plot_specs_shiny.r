@@ -22,13 +22,15 @@
 #' 
 #' @export
 plot_specs_shiny <- function(sl, fd=NULL, fd_id_col=1){
-  # handle fd_id_col 
-  if(is.numeric(fd_id_col) && (fd_id_col %% 1 == 0) && (fd_id_col <= ncol(fd)) && (fd_id_col > 0)){
-    fd_id_col_name <- colnames(fd)[fd_id_col]
-  }else if(is.character(fd_id_col) && fd_id_col %in% colnames(fd)){
-    fd_id_col_name <- fd_id_col
-  }else{
-    stop("invalid fd_id_col")
+  # handle fd_id_col, but only if fd is provided
+  if(!is.null(fd)){
+    if(is.numeric(fd_id_col) && (fd_id_col %% 1 == 0) && (fd_id_col <= ncol(fd)) && (fd_id_col > 0)){
+      fd_id_col_name <- colnames(fd)[fd_id_col]
+    }else if(is.character(fd_id_col) && fd_id_col %in% colnames(fd)){
+      fd_id_col_name <- fd_id_col
+    }else{
+      stop("invalid fd_id_col")
+    }
   }
 
   # aggregate data into long and wide data types

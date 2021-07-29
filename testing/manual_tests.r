@@ -12,9 +12,9 @@ attach(antarctica)
 # test that primary visualization works
 plot_specs_shiny(antarctica_specs_list)
 # make app
-make_specs_app2(antarctica_specs_list, app_fp="test")
+make_specs_app(antarctica_specs_list, app_fp="test")
 # check if it can be run with shiny::runApp
-shiny::runApp("test")
+shiny::runApp("./test")
 # see if it works online
 rsconnect::deployApp("test")
 # check if it works...
@@ -29,7 +29,7 @@ plot_specs_shiny(antarctica_specs_list, antarctica_taxonomy, 1)
 # make app
 make_specs_app(antarctica_specs_list, antarctica_taxonomy, 1, app_fp="test")
 # check if it can be run with shiny::runApp
-shiny::runApp("test")
+shiny::runApp("./test")
 # see if it works online
 rsconnect::deployApp("test")
 # check if it works...
