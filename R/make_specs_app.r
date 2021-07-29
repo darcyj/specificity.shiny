@@ -44,9 +44,12 @@
 #' # rsconnect::deployApp("antarctica_specs_shiny_app")
 #'
 #' @export
-make_specs_app <- function(sl, fd, fd_id_col=1, app_fp="mySpecApp"){
+make_specs_app <- function(sl, fd=NULL, fd_id_col=1, app_fp="mySpecApp"){
+  if(app_fp == "mySpecApp"){
+    warning("app_fp is set to default 'mySpecApp'... did you mean to do this?")
+  }
   # trim tailing slashes from app_fp
-  while(endswith(app_fp, "/")){
+  while(endsWith(app_fp, "/")){
     app_fp <- substr(app_fp, start=1, stop=nchar(app_fp)-1)
   } 
 
