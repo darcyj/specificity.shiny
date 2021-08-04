@@ -3,4 +3,4 @@ shiny=1.6.0
 ggplot2=3.3.5
 DT=0.18
 colourpicker=1.1.0
-specificity.shiny=0.1.1.9000
+specificity.shiny=0.1.2.9000

@@ -1,6 +1,6 @@
 Package: specificity.shiny
 Title: Interactive Visualization for package `specificity`
-Version: 0.1.1.9000
+Version: 0.1.2.9000
 Authors@R: person(given=c("John", "L"), family="Darcy", email = "darcyj@colorado.edu", role = c("aut", "cre"))
 Description: This package is a companion for `specificity`, providing interactive visualization for analyses conducted in that package.
 License: GPL
