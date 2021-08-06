@@ -9,7 +9,7 @@
 #'   \item{antarctica_specs_list:}{
 #'     A list of outputs from specificity::phy_or_env_spec(), with entries for
 #'     Nitrogen ("N"), Phosphorus ("P"), geographic distance ("Geo"), 
-#'     fungal beta-diversity ("Fungi"), and algal beta-diversity ("Algae").
+#'     and algal beta-diversity ("Algae").
 #'   }
 #'   \item{antarctica_taxonomy:}{
 #'     data.frame object containing taxonomic information for the species in

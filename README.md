@@ -3,7 +3,7 @@ Companion R package for `specificity`; enables interactive visualization and exp
 
 
 by John L. Darcy
-Updated 28 JUL 2021
+Updated 06 AUG 2021
 
 
 ## Installation
@@ -18,7 +18,7 @@ This package is extremely lightweight, and can be installed quite easily using `
 * THIS PACKAGE DOES NOT REQUIRE `specificity`! This was intentional, so that `specificity` results can be shared interactively with collaborators, without the need for them to install the main package.
 
 ## How to use
-See the example in `?plot_specs_shiny`. It's really easy.
+See the example in `?plot_specs_shiny`. It's really easy. The [tutorial vignette for `specificity`](https://raw.githubusercontent.com/darcyj/specificity/master/vignette/vignette.pdf) also contains a full walkthrough of this package.
 
 ## Documentation
 Documentation for individual functions can be obtained within R using `?fun` where fun is the function you're interested in. There is also a full .pdf documentation file in this repository named `specificity.pdf`, which is a standard glossary of all functions in the package.
